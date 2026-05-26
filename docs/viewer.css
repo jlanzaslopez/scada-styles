@@ -142,8 +142,9 @@
   .meta-row { display: flex; gap: 4px; align-items: center; }
   .meta-val { flex: 1; }
   .meta-right { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
-  .meta-color { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+  .meta-color { display: flex; align-items: center; gap: 4px; width: 100%; }
   .color-rgb { font-family: 'Consolas', monospace; font-size: 9px; color: var(--text-muted); }
+  .meta-color .color-hex { margin-left: auto; }
   .color-hex {
     font-family: 'Consolas', monospace; font-size: 9px;
     color: var(--text-secondary); cursor: pointer; letter-spacing: 0.03em;
