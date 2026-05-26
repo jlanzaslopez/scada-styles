@@ -74,6 +74,7 @@
     background: var(--border); color: var(--text-secondary);
   }
   .pill.on { background: var(--accent); color: #fff; }
+  .pill.blink-on { background: #f59e0b; color: #fff; }
   main { padding: 16px 24px 60px; }
   .subgroup { margin-bottom: 24px; }
   .subgroup-title {
@@ -143,13 +144,7 @@
     text-transform: uppercase; font-size: 8px;
     letter-spacing: 0.05em; min-width: 28px;
   }
-  .blink-indicator {
-    position: absolute; top: 4px; right: 4px;
-    width: 6px; height: 6px; border-radius: 50%;
-    background: #f59e0b;
-    animation: blink 1.4s ease-in-out infinite;
-  }
-  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+
   .empty-msg { color: var(--text-muted); font-size: 10px; font-style: italic; }
   .available-msg {
     color: #16a34a; font-size: 11px; font-weight: 600;
@@ -212,7 +207,8 @@ function getSampleText(name) {
 }
 
 function pill(letter, on) {
-  return '<span class="pill ' + (on ? 'on' : '') + '">' + letter + '</span>';
+  const cls = on ? (letter === 'B' ? 'blink-on' : 'on') : '';
+  return '<span class="pill ' + cls + '">' + letter + '</span>';
 }
 
 function colorToCSS(c) {
@@ -230,22 +226,51 @@ function renderPreview(s, unused) {
   const hasOutline = s.outline.forced;
   const isAvailable = s.category === 'UserDefined' && !hasText && !hasFill && !hasLine && !hasOutline;
 
+  const animId = 'bk' + s.id;
+  let extraStyle = '';
+
+  // Fill blink: animate background-color between c1 and c2
   let bgStyle = '';
   if (hasFill && s.fill.color) {
-    if (s.fill.color.type === 'pattern') {
-      bgStyle = 'background: ' + colorToCSS(s.fill.color) + ';';
+    const c1 = s.fill.color.type === 'pattern' ? colorToCSS(s.fill.color) : s.fill.color.css;
+    if (s.fill.blink && s.fill.blink.color) {
+      const c2 = s.fill.blink.color.css;
+      extraStyle += '@keyframes ' + animId + 'f{0%,49%{background:' + c1 + '}50%,100%{background:' + c2 + '}} ';
+      bgStyle = 'background:' + c1 + ';animation:' + animId + 'f 1.4s step-end infinite;';
     } else {
-      bgStyle = 'background: ' + s.fill.color.css + ';';
+      bgStyle = 'background:' + c1 + ';';
     }
   }
 
+  // Line/Outline blink: animate border-color between c1 and c2
   let borderStyle = '';
+  let borderBase = '';
+  let borderBlink2 = '';
+  let borderWeight = 1;
   if (hasOutline && s.outline.color) {
-    borderStyle = 'border: ' + s.outline.weight + 'px solid ' + colorToCSS(s.outline.color) + ';';
+    borderWeight = s.outline.weight || 1;
+    borderBase = colorToCSS(s.outline.color);
+    if (s.outline.blink && s.outline.blink.color) borderBlink2 = s.outline.blink.color.css;
   } else if (hasLine && s.line.color) {
-    const c = s.line.color.type === 'pattern' ? s.line.color.fore : s.line.color.css;
-    borderStyle = 'border: ' + s.line.weight + 'px solid ' + c + ';';
+    borderWeight = s.line.weight || 1;
+    borderBase = s.line.color.type === 'pattern' ? s.line.color.fore : s.line.color.css;
+    if (s.line.blink && s.line.blink.color) borderBlink2 = s.line.blink.color.css;
   }
+  if (borderBase) {
+    if (borderBlink2) {
+      extraStyle += '@keyframes ' + animId + 'b{0%,49%{border-color:' + borderBase + '}50%,100%{border-color:' + borderBlink2 + '}} ';
+      borderStyle = 'border:' + borderWeight + 'px solid ' + borderBase + ';animation:' + animId + 'b 1.4s step-end infinite;';
+      if (bgStyle.includes('animation:')) {
+        // Merge both animations
+        bgStyle = bgStyle.replace('animation:', 'animation:' + animId + 'b 1.4s step-end infinite,');
+        borderStyle = 'border:' + borderWeight + 'px solid ' + borderBase + ';';
+      }
+    } else {
+      borderStyle = 'border:' + borderWeight + 'px solid ' + borderBase + ';';
+    }
+  }
+
+  const styleTag = extraStyle ? '<style>' + extraStyle + '</style>' : '';
 
   let textHTML = '';
   if (unused) {
@@ -269,12 +294,8 @@ function renderPreview(s, unused) {
     textHTML = '<span class="empty-msg">—</span>';
   }
 
-  const blinkActive = (hasText && s.text.blink) || (hasFill && s.fill.blink) || (hasLine && s.line.blink) || (hasOutline && s.outline.blink);
-  const blinkDot = blinkActive ? '<div class="blink-indicator" title="Blink activo"></div>' : '';
-
-  return '<div class="preview" style="' + bgStyle + ' ' + borderStyle + '">' + textHTML + blinkDot + '</div>';
+  return styleTag + '<div class="preview" style="' + bgStyle + ' ' + borderStyle + '">' + textHTML + '</div>';
 }
-
 function renderMeta(s) {
   const lines = [];
   if (s.text.forced && s.text.font) {
@@ -303,11 +324,13 @@ function renderCard(s) {
   const unusedClass = unused ? ' unused' : '';
   const unusedTag = unused ? ' <span class="unused-tag">desuso</span>' : '';
   const usageHTML = s.usage ? '<div class="card-usage">' + s.usage + '</div>' : '';
+  const blinkActive = (s.text.forced && s.text.blink) || (s.fill.forced && s.fill.blink) || (s.line.forced && s.line.blink) || (s.outline.forced && s.outline.blink);
   const pills = '<div class="pills">' +
     pill('T', s.text.forced) +
     pill('F', s.fill.forced) +
     pill('L', s.line.forced) +
     pill('O', s.outline.forced) +
+    pill('B', blinkActive) +
     '</div>';
   return '<div class="card' + unusedClass + '" data-cat="' + s.category + '" data-text="' + s.text.forced + '" data-fill="' + s.fill.forced + '" data-line="' + s.line.forced + '" data-outline="' + s.outline.forced + '">' +
     '<div class="card-header">' +
