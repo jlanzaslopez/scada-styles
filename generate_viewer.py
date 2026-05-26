@@ -214,11 +214,10 @@ def xml_to_key(xml_path):
 def generate_one(xml_path, output_dir):
     key = xml_to_key(xml_path)
     styles = parse_xml(xml_path)
-    out_path = os.path.join(output_dir, f'styles_data_{key}.js')
+    out_path = os.path.join(output_dir, f'styles_data_{key}.json')
+    payload = {'styles': styles, 'sample_text': SAMPLE_TEXT_BY_NAME}
     with open(out_path, 'w', encoding='utf-8') as f:
-        f.write(f'// Auto-generated from {os.path.basename(xml_path)} — do not edit manually\n')
-        f.write(f'window["STYLES_{key}"] = {json.dumps(styles, ensure_ascii=False)};\n')
-        f.write(f'window["SAMPLE_TEXT_{key}"] = {json.dumps(SAMPLE_TEXT_BY_NAME, ensure_ascii=False)};\n')
+        json.dump(payload, f, ensure_ascii=False)
     print(f'  ✅  {out_path} ({len(styles)} styles)')
     return key
 
