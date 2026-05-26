@@ -758,39 +758,6 @@ function renderMeta(s) {
   return '<div class="meta">' + lines.join('') + '</div>';
 }
 
-function renderMeta(s) {
-  const lines = [];
-  if (s.text.forced && s.text.font) {
-    lines.push('<div class="meta-row"><span class="meta-label">FONT</span><span class="meta-val">' + s.text.font + ' ' + s.text.size + 'pt' + (s.text.bold ? ' bold' : '') + '</span></div>');
-  }
-  if (s.text.forced && s.text.color) {
-    lines.push('<div class="meta-row"><span class="meta-label">COL</span><span class="meta-val meta-right">' + colorChip(s.text.color) + '</span></div>');
-  }
-  if (s.fill.forced && s.fill.color) {
-    if (s.fill.color.type === 'pattern') {
-      lines.push('<div class="meta-row"><span class="meta-label">FILL</span><span class="meta-val">pattern ' + s.fill.color.hatch + '</span></div>');
-    } else {
-      lines.push('<div class="meta-row"><span class="meta-label">FILL</span><span class="meta-val meta-right">' + colorChip(s.fill.color) + '</span></div>');
-      if (s.fill.blink && s.fill.blink.color) {
-        lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-right">' + colorChip(s.fill.blink.color) + '</span></div>');
-      }
-    }
-  }
-  if (s.line.forced) {
-    const lc = s.line.color ? (s.line.color.type === 'pattern' ? 'pattern' : '') : '';
-    const chip = s.line.color && s.line.color.type === 'solid' ? colorChip(s.line.color) : lc;
-    lines.push('<div class="meta-row"><span class="meta-label">LINE</span><span class="meta-val meta-right">' + s.line.weight + 'px ' + chip + '</span></div>');
-    if (s.line.blink && s.line.blink.color) {
-      lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-right">' + colorChip(s.line.blink.color) + '</span></div>');
-    }
-  }
-  if (s.outline.forced) {
-    const oc = s.outline.color ? (s.outline.color.type === 'pattern' ? 'pattern' : '') : '';
-    const chip = s.outline.color && s.outline.color.type === 'solid' ? colorChip(s.outline.color) : oc;
-    lines.push('<div class="meta-row"><span class="meta-label">OUT</span><span class="meta-val meta-right">' + s.outline.weight + 'px ' + chip + '</span></div>');
-  }
-  return '<div class="meta">' + lines.join('') + '</div>';
-}
 
 function renderCard(s) {
   const unused = isUnused(s);
