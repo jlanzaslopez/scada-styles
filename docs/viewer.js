@@ -142,14 +142,14 @@ function renderMeta(s) {
   }
   if (s.line.forced) {
     const chip = s.line.color && s.line.color.type === 'solid' ? colorLine(s.line.color) : (s.line.color ? 'pattern' : '');
-    lines.push('<div class="meta-row"><span class="meta-label">LINE</span><span class="meta-val meta-right">' + s.line.weight + 'px ' + chip + '</span></div>');
+    lines.push('<div class="meta-row"><span class="meta-label">LINE</span><span class="meta-val meta-color"><span class="color-rgb">' + s.line.weight + 'px</span>' + chip + '</span></div>');
     if (s.line.blink && s.line.blink.color) {
       lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-color">' + colorLine(s.line.blink.color) + '</span></div>');
     }
   }
   if (s.outline.forced) {
     const chip = s.outline.color && s.outline.color.type === 'solid' ? colorLine(s.outline.color) : '';
-    lines.push('<div class="meta-row"><span class="meta-label">OUT</span><span class="meta-val meta-right">' + s.outline.weight + 'px ' + chip + '</span></div>');
+    lines.push('<div class="meta-row"><span class="meta-label">OUT</span><span class="meta-val meta-color"><span class="color-rgb">' + s.outline.weight + 'px</span>' + chip + '</span></div>');
   }
   return '<div class="meta">' + lines.join('') + '</div>';
 }
