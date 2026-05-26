@@ -29,8 +29,9 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Generate styles_data.js
-        run: python generate_viewer.py styles/Standard_Style.xml docs/
+      - name: Generate data files for all XMLs
+        run: |
+          python generate_viewer.py --all styles/ docs/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
