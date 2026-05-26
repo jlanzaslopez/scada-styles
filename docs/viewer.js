@@ -111,7 +111,7 @@ function toHex(color) {
 
 function colorLine(color) {
   if (!color || color.type !== 'solid') return '';
-  return color.css + ' <span class="color-hex" onclick="copyHex(this)" title="Copiar hex">' + toHex(color) + '</span>';
+  return '<span class="color-rgb">' + color.css + '</span><span class="color-hex" onclick="copyHex(this)" title="Copiar hex">' + toHex(color) + '</span>';
 }
 
 function copyHex(el) {
@@ -128,15 +128,15 @@ function renderMeta(s) {
     lines.push('<div class="meta-row"><span class="meta-label">FONT</span><span class="meta-val">' + s.text.font + ' ' + s.text.size + 'pt' + (s.text.bold ? ' bold' : '') + '</span></div>');
   }
   if (s.text.forced && s.text.color) {
-    lines.push('<div class="meta-row"><span class="meta-label">COL</span><span class="meta-val meta-right">' + colorLine(s.text.color) + '</span></div>');
+    lines.push('<div class="meta-row"><span class="meta-label">COL</span><span class="meta-val meta-color">' + colorLine(s.text.color) + '</span></div>');
   }
   if (s.fill.forced && s.fill.color) {
     if (s.fill.color.type === 'pattern') {
       lines.push('<div class="meta-row"><span class="meta-label">FILL</span><span class="meta-val">pattern ' + s.fill.color.hatch + '</span></div>');
     } else {
-      lines.push('<div class="meta-row"><span class="meta-label">FILL</span><span class="meta-val meta-right">' + colorLine(s.fill.color) + '</span></div>');
+      lines.push('<div class="meta-row"><span class="meta-label">FILL</span><span class="meta-val meta-color">' + colorLine(s.fill.color) + '</span></div>');
       if (s.fill.blink && s.fill.blink.color) {
-        lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-right">' + colorLine(s.fill.blink.color) + '</span></div>');
+        lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-color">' + colorLine(s.fill.blink.color) + '</span></div>');
       }
     }
   }
@@ -144,7 +144,7 @@ function renderMeta(s) {
     const chip = s.line.color && s.line.color.type === 'solid' ? colorLine(s.line.color) : (s.line.color ? 'pattern' : '');
     lines.push('<div class="meta-row"><span class="meta-label">LINE</span><span class="meta-val meta-right">' + s.line.weight + 'px ' + chip + '</span></div>');
     if (s.line.blink && s.line.blink.color) {
-      lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-right">' + colorLine(s.line.blink.color) + '</span></div>');
+      lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-color">' + colorLine(s.line.blink.color) + '</span></div>');
     }
   }
   if (s.outline.forced) {
