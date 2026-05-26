@@ -1,3 +1,8 @@
+// ── State ──────────────────────────────────────────────────────────────────
+let STYLES = [];
+let SAMPLE_TEXT_BY_NAME = {};
+let currentKey = null;
+
 function isUnused(s) {
   if (s.fill && s.fill.forced && s.fill.color && s.fill.color.type === 'solid') {
     return s.fill.color.r === 255 && s.fill.color.g === 0 && s.fill.color.b === 255;
@@ -183,11 +188,6 @@ function renderCard(s) {
     renderMeta(s) +
   '</div>';
 }
-
-// ── State ──────────────────────────────────────────────────────────────────
-let STYLES = [];
-let SAMPLE_TEXT_BY_NAME = {};
-let currentKey = null;
 
 // ── Render ─────────────────────────────────────────────────────────────────
 function render() {
