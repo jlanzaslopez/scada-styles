@@ -550,10 +550,6 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
   .meta-row { display: flex; gap: 4px; align-items: center; }
   .meta-val { flex: 1; }
   .meta-right { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
-  .color-chip {
-    display: inline-block; width: 10px; height: 10px;
-    border-radius: 2px; border: 1px solid rgba(0,0,0,0.15); flex-shrink: 0;
-  }
   .color-hex {
     font-family: 'Consolas', monospace; font-size: 9px;
     color: var(--text-secondary); cursor: pointer; letter-spacing: 0.03em;
@@ -717,10 +713,9 @@ function toHex(color) {
   return '#' + h(color.r) + h(color.g) + h(color.b);
 }
 
-function colorChip(color) {
+function colorLine(color) {
   if (!color || color.type !== 'solid') return '';
-  const hex = toHex(color);
-  return '<span class="color-chip" style="background:' + color.css + '"></span><span class="color-hex" onclick="copyHex(this)" title="Copiar">' + hex + '</span>';
+  return color.css + ' <span class="color-hex" onclick="copyHex(this)" title="Copiar hex">' + toHex(color) + '</span>';
 }
 
 function copyHex(el) {
@@ -729,6 +724,38 @@ function copyHex(el) {
     el.textContent = '✓';
     setTimeout(() => el.textContent = orig, 900);
   });
+}
+
+function renderMeta(s) {
+  const lines = [];
+  if (s.text.forced && s.text.font) {
+    lines.push('<div class="meta-row"><span class="meta-label">FONT</span><span class="meta-val">' + s.text.font + ' ' + s.text.size + 'pt' + (s.text.bold ? ' bold' : '') + '</span></div>');
+  }
+  if (s.text.forced && s.text.color) {
+    lines.push('<div class="meta-row"><span class="meta-label">COL</span><span class="meta-val meta-right">' + colorLine(s.text.color) + '</span></div>');
+  }
+  if (s.fill.forced && s.fill.color) {
+    if (s.fill.color.type === 'pattern') {
+      lines.push('<div class="meta-row"><span class="meta-label">FILL</span><span class="meta-val">pattern ' + s.fill.color.hatch + '</span></div>');
+    } else {
+      lines.push('<div class="meta-row"><span class="meta-label">FILL</span><span class="meta-val meta-right">' + colorLine(s.fill.color) + '</span></div>');
+      if (s.fill.blink && s.fill.blink.color) {
+        lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-right">' + colorLine(s.fill.blink.color) + '</span></div>');
+      }
+    }
+  }
+  if (s.line.forced) {
+    const chip = s.line.color && s.line.color.type === 'solid' ? colorLine(s.line.color) : (s.line.color ? 'pattern' : '');
+    lines.push('<div class="meta-row"><span class="meta-label">LINE</span><span class="meta-val meta-right">' + s.line.weight + 'px ' + chip + '</span></div>');
+    if (s.line.blink && s.line.blink.color) {
+      lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-right">' + colorLine(s.line.blink.color) + '</span></div>');
+    }
+  }
+  if (s.outline.forced) {
+    const chip = s.outline.color && s.outline.color.type === 'solid' ? colorLine(s.outline.color) : '';
+    lines.push('<div class="meta-row"><span class="meta-label">OUT</span><span class="meta-val meta-right">' + s.outline.weight + 'px ' + chip + '</span></div>');
+  }
+  return '<div class="meta">' + lines.join('') + '</div>';
 }
 
 function renderMeta(s) {
