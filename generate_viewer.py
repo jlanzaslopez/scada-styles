@@ -217,8 +217,8 @@ def generate_one(xml_path, output_dir):
     out_path = os.path.join(output_dir, f'styles_data_{key}.js')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(f'// Auto-generated from {os.path.basename(xml_path)} — do not edit manually\n')
-        f.write(f'const STYLES_{key} = {json.dumps(styles, ensure_ascii=False)};\n')
-        f.write(f'const SAMPLE_TEXT_{key} = {json.dumps(SAMPLE_TEXT_BY_NAME, ensure_ascii=False)};\n')
+        f.write(f'window["STYLES_{key}"] = {json.dumps(styles, ensure_ascii=False)};\n')
+        f.write(f'window["SAMPLE_TEXT_{key}"] = {json.dumps(SAMPLE_TEXT_BY_NAME, ensure_ascii=False)};\n')
     print(f'  ✅  {out_path} ({len(styles)} styles)')
     return key
 
