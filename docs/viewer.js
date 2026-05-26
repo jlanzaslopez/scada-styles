@@ -184,6 +184,12 @@ function renderCard(s) {
   '</div>';
 }
 
+// ── State ──────────────────────────────────────────────────────────────────
+let STYLES = [];
+let SAMPLE_TEXT_BY_NAME = {};
+let currentKey = null;
+
+// ── Render ─────────────────────────────────────────────────────────────────
 function render() {
   const main = document.getElementById('main');
   const groups = {};
@@ -194,32 +200,28 @@ function render() {
   });
   const catOrder = { HMI: 0, Alarm: 1, UserDefined: 2 };
   const sortedKeys = Object.keys(groups).sort((a, b) => {
-    const catA = a.split('|')[0];
-    const catB = b.split('|')[0];
+    const catA = a.split('|')[0], catB = b.split('|')[0];
     if (catOrder[catA] !== catOrder[catB]) return catOrder[catA] - catOrder[catB];
     return a.localeCompare(b);
   });
   let html = '';
   sortedKeys.forEach(key => {
     const parts = key.split('|');
-    const cat = parts[0];
-    const subgroup = parts[1];
-    let tagClass = 'cat-tag';
-    let tagText = cat;
+    const cat = parts[0], subgroup = parts[1];
+    let tagClass = 'cat-tag', tagText = 'HMI';
     if (cat === 'Alarm') { tagClass += ' alarm'; tagText = 'ALM'; }
     else if (cat === 'UserDefined') { tagClass += ' userdefined'; tagText = 'USR'; }
-    else { tagText = 'HMI'; }
     html += '<div class="subgroup" data-cat="' + cat + '">' +
       '<div class="subgroup-title"><span class="' + tagClass + '">' + tagText + '</span>' + subgroup + '</div>' +
-      '<div class="grid">' +
-        groups[key].map(renderCard).join('') +
-      '</div>' +
+      '<div class="grid">' + groups[key].map(renderCard).join('') + '</div>' +
     '</div>';
   });
   main.innerHTML = html;
+  document.getElementById('total-count').textContent = STYLES.length;
   applyFilters();
 }
 
+// ── Filters ────────────────────────────────────────────────────────────────
 let filterCat = 'all';
 let filterForce = 'all';
 
@@ -229,10 +231,7 @@ function applyFilters() {
     let visible = 0;
     cards.forEach(card => {
       const catMatch = filterCat === 'all' || card.dataset.cat === filterCat;
-      let forceMatch = true;
-      if (filterForce !== 'all') {
-        forceMatch = card.dataset[filterForce] === 'true';
-      }
+      const forceMatch = filterForce === 'all' || card.dataset[filterForce] === 'true';
       const show = catMatch && forceMatch;
       card.style.display = show ? '' : 'none';
       if (show) visible++;
@@ -244,9 +243,7 @@ function applyFilters() {
 document.querySelectorAll('[data-cat]').forEach(btn => {
   if (btn.tagName === 'BUTTON') {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('[data-cat]').forEach(b => {
-        if (b.tagName === 'BUTTON') b.classList.remove('active');
-      });
+      document.querySelectorAll('[data-cat]').forEach(b => { if (b.tagName === 'BUTTON') b.classList.remove('active'); });
       btn.classList.add('active');
       filterCat = btn.dataset.cat;
       applyFilters();
@@ -262,12 +259,72 @@ document.querySelectorAll('[data-force]').forEach(btn => {
   });
 });
 
+// ── Download ────────────────────────────────────────────────────────────────
 function downloadXML() {
+  if (!currentKey) return;
   const a = document.createElement('a');
-  a.href = '../styles/Standard_Style.xml';
-  a.download = 'Standard_Style.xml';
+  a.href = '../styles/' + currentKey + '.xml';
+  a.download = currentKey + '.xml';
   a.click();
 }
 
-render();
-document.getElementById("total-count").textContent = STYLES.length;
+// ── Dynamic loader ──────────────────────────────────────────────────────────
+function loadStyleData(key) {
+  return new Promise((resolve, reject) => {
+    // Remove previously loaded data script
+    const old = document.getElementById('data-script');
+    if (old) old.remove();
+    const script = document.createElement('script');
+    script.id = 'data-script';
+    script.src = 'styles_data_' + key + '.js';
+    script.onload = () => {
+      STYLES = window['STYLES_' + key] || [];
+      SAMPLE_TEXT_BY_NAME = window['SAMPLE_TEXT_' + key] || {};
+      resolve();
+    };
+    script.onerror = () => reject(new Error('Failed to load styles_data_' + key + '.js'));
+    document.head.appendChild(script);
+  });
+}
+
+// ── Init ────────────────────────────────────────────────────────────────────
+async function init() {
+  let index;
+  try {
+    const res = await fetch('styles_index.json');
+    index = await res.json();
+  } catch (e) {
+    document.getElementById('main').innerHTML = '<p style="padding:24px;color:#c00">Error cargando styles_index.json</p>';
+    return;
+  }
+
+  const select = document.getElementById('xml-select');
+  select.innerHTML = '';
+  index.forEach(entry => {
+    const opt = document.createElement('option');
+    opt.value = entry.key;
+    opt.textContent = entry.file;
+    select.appendChild(opt);
+  });
+
+  async function loadSelected() {
+    const key = select.value;
+    currentKey = key;
+    document.getElementById('main').innerHTML = '<p style="padding:24px;color:#888">Cargando...</p>';
+    try {
+      await loadStyleData(key);
+      render();
+    } catch (e) {
+      document.getElementById('main').innerHTML = '<p style="padding:24px;color:#c00">Error: ' + e.message + '</p>';
+    }
+  }
+
+  select.addEventListener('change', loadSelected);
+
+  if (index.length > 0) {
+    select.value = index[0].key;
+    await loadSelected();
+  }
+}
+
+init();
