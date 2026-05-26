@@ -141,15 +141,17 @@ function renderMeta(s) {
     }
   }
   if (s.line.forced) {
-    const chip = s.line.color && s.line.color.type === 'solid' ? colorLine(s.line.color) : (s.line.color ? 'pattern' : '');
-    lines.push('<div class="meta-row"><span class="meta-label">LINE</span><span class="meta-val meta-color"><span class="color-rgb">' + s.line.weight + 'px</span>' + chip + '</span></div>');
+    const chipLine = s.line.color && s.line.color.type === 'solid' ? s.line.color.css : (s.line.color ? 'pattern' : '');
+    const hexLine  = s.line.color && s.line.color.type === 'solid' ? '<span class="color-hex" onclick="copyHex(this)" title="Copiar hex">' + toHex(s.line.color) + '</span>' : '';
+    lines.push('<div class="meta-row"><span class="meta-label">LINE</span><span class="meta-val meta-color"><span class="color-rgb">' + s.line.weight + 'px ' + chipLine + '</span>' + hexLine + '</span></div>');
     if (s.line.blink && s.line.blink.color) {
       lines.push('<div class="meta-row"><span class="meta-label">↔</span><span class="meta-val meta-color">' + colorLine(s.line.blink.color) + '</span></div>');
     }
   }
   if (s.outline.forced) {
-    const chip = s.outline.color && s.outline.color.type === 'solid' ? colorLine(s.outline.color) : '';
-    lines.push('<div class="meta-row"><span class="meta-label">OUT</span><span class="meta-val meta-color"><span class="color-rgb">' + s.outline.weight + 'px</span>' + chip + '</span></div>');
+    const chipOut = s.outline.color && s.outline.color.type === 'solid' ? s.outline.color.css : '';
+    const hexOut  = s.outline.color && s.outline.color.type === 'solid' ? '<span class="color-hex" onclick="copyHex(this)" title="Copiar hex">' + toHex(s.outline.color) + '</span>' : '';
+    lines.push('<div class="meta-row"><span class="meta-label">OUT</span><span class="meta-val meta-color"><span class="color-rgb">' + s.outline.weight + 'px ' + chipOut + '</span>' + hexOut + '</span></div>');
   }
   return '<div class="meta">' + lines.join('') + '</div>';
 }
