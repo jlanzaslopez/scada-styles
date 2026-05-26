@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Visor de Estilos · Standard_Style</title>
+<title>Visor de Estilos · SCADA Styles</title>
 <link rel="stylesheet" href="viewer.css">
 </head>
 <body>
 
 <header>
-  <h1>Visor de Estilos <small>Standard_Style · <span id="total-count">—</span> estilos</small></h1>
+  <h1>Visor de Estilos <small><span id="total-count">—</span> estilos</small></h1>
   <div class="filters">
     <button class="filter-btn active" data-cat="all">Todas</button>
     <button class="filter-btn" data-cat="HMI">HMI Element</button>
@@ -17,13 +17,15 @@
   </div>
   <div class="filters">
     <button class="filter-btn active" data-force="all">Cualquier primitiva</button>
-    <button class="filter-btn" data-force="text">Solo con texto</button>
-    <button class="filter-btn" data-force="fill">Solo con fondo</button>
-    <button class="filter-btn" data-force="line">Solo con línea</button>
-    <button class="filter-btn" data-force="outline">Solo con outline</button>
+    <button class="filter-btn" data-force="text">Solo texto</button>
+    <button class="filter-btn" data-force="fill">Solo fondo</button>
+    <button class="filter-btn" data-force="line">Solo línea</button>
+    <button class="filter-btn" data-force="outline">Solo outline</button>
   </div>
-  <button class="toggle-theme" onclick="document.body.classList.toggle('dark')">🌓 Tema</button>
-  <button class="toggle-theme" onclick="downloadXML()">⬇ Descargar XML</button>
+  <div class="header-right">
+    <select id="xml-select" class="xml-select"></select>
+    <button class="action-btn" id="download-btn" onclick="downloadXML()">⬇ Descargar XML</button>
+  </div>
 </header>
 
 <div class="legend">
@@ -40,7 +42,6 @@
 
 <main id="main"></main>
 
-<script src="styles_data.js"></script>
 <script src="viewer.js"></script>
 </body>
 </html>
