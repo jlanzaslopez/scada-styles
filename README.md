@@ -2,7 +2,7 @@
 
 Sistema de estilos HMI para AVEVA System Platform — Proyecto CESAN (Acciona).
 
-**[→ Ver visor de estilos](https://tu-usuario.github.io/cesan-scada-styles/)**
+**[→ Ver visor de estilos](https://jlanzaslopez.github.io/scada-styles/)**
 
 ---
 
@@ -32,9 +32,3 @@ python generate_viewer.py Standard_Style.xml docs/index.html
 ## Importar en System Platform
 
 Importar `Standard_Style.xml` desde el IDE de AVEVA System Platform → Galaxy → Import Style Library.
-
----
-
-## Configurar GitHub Pages
-
-En Settings → Pages → Source: **Deploy from branch** → rama `main` → carpeta `/docs`.
