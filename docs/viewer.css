@@ -10,18 +10,7 @@
     --header-bg: #ffffff;
     --preview-bg: #fafbfc;
   }
-  body.dark {
-    --bg: #0c1015;
-    --card-bg: #181f28;
-    --border: #2a3340;
-    --border-strong: #3d4754;
-    --text-primary: #e2e8f0;
-    --text-secondary: #8899aa;
-    --text-muted: #5c6b7d;
-    --accent: #3b9ae0;
-    --header-bg: #141a21;
-    --preview-bg: #0f141a;
-  }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: 'Segoe UI', system-ui, sans-serif;
@@ -48,13 +37,20 @@
   }
   .filter-btn:hover { color: var(--text-primary); border-color: var(--border-strong); }
   .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-  .toggle-theme {
-    margin-left: auto; background: transparent; border: 1px solid var(--border);
-    color: var(--text-secondary); padding: 6px 14px; border-radius: 4px;
-    cursor: pointer; font-family: inherit; font-size: 11px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.04em;
+  .header-right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+  .xml-select {
+    background: var(--card-bg); border: 1px solid var(--border);
+    color: var(--text-primary); padding: 5px 10px; border-radius: 4px;
+    font-size: 11px; font-family: inherit; cursor: pointer;
+    max-width: 220px;
   }
-  .toggle-theme:hover { color: var(--text-primary); }
+  .action-btn {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text-secondary); padding: 5px 12px; border-radius: 4px;
+    cursor: pointer; font-family: inherit; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap;
+  }
+  .action-btn:hover { color: var(--text-primary); border-color: var(--border-strong); }
   .legend {
     display: flex; gap: 12px; font-size: 10px; color: var(--text-muted);
     align-items: center; padding: 8px 24px;
