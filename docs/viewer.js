@@ -269,22 +269,12 @@ function downloadXML() {
 }
 
 // ── Dynamic loader ──────────────────────────────────────────────────────────
-function loadStyleData(key) {
-  return new Promise((resolve, reject) => {
-    // Remove previously loaded data script
-    const old = document.getElementById('data-script');
-    if (old) old.remove();
-    const script = document.createElement('script');
-    script.id = 'data-script';
-    script.src = 'styles_data_' + key + '.js';
-    script.onload = () => {
-      STYLES = window['STYLES_' + key] || [];
-      SAMPLE_TEXT_BY_NAME = window['SAMPLE_TEXT_' + key] || {};
-      resolve();
-    };
-    script.onerror = () => reject(new Error('Failed to load styles_data_' + key + '.js'));
-    document.head.appendChild(script);
-  });
+async function loadStyleData(key) {
+  const res = await fetch('styles_data_' + key + '.json');
+  if (!res.ok) throw new Error('HTTP ' + res.status + ' loading styles_data_' + key + '.json');
+  const data = await res.json();
+  STYLES = data.styles || [];
+  SAMPLE_TEXT_BY_NAME = data.sample_text || {};
 }
 
 // ── Init ────────────────────────────────────────────────────────────────────
