@@ -2403,7 +2403,16 @@
     <StatusPrimitive />
     <Outline Enabled="false" />
   </ES>
-  <ES Id="870" Name="7_Bot_OK">
+  <ES Id="870" Name="Transparente">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="880" Name="8_Bot_OK">
     <GraphicPrimitive>
       <TextStyle>
         <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
@@ -2430,15 +2439,6 @@
           </SolidFill>
         </Color>
       </LineStyle>
-    </GraphicPrimitive>
-    <StatusPrimitive />
-    <Outline Enabled="false" />
-  </ES>
-  <ES Id="880" Name="User_Defined_09">
-    <GraphicPrimitive>
-      <TextStyle />
-      <FillStyle />
-      <LineStyle />
     </GraphicPrimitive>
     <StatusPrimitive />
     <Outline Enabled="false" />
