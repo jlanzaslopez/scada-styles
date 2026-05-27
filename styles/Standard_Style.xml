@@ -2403,13 +2403,33 @@
     <StatusPrimitive />
     <Outline Enabled="false" />
   </ES>
-  <ES Id="870" Name="Transparente">
+  <ES Id="870" Name="7_Bot_OK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="93" G="158" B="110" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
-        <Color FillType="NoFill" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="200" G="230" B="201" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
       </FillStyle>
-      <LineStyle />
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="93" G="158" B="110" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
     </GraphicPrimitive>
     <StatusPrimitive />
     <Outline Enabled="false" />
