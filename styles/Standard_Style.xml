@@ -52,7 +52,7 @@
     <StatusPrimitive>
       <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
         <TransColor R="255" G="0" B="255" A="255" />
-        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFcSURBVEhLY2AYBdQE+0XsffYL2bugi1MFnGEwZt0nZHsHhEFsdHmKwT5hh7J9Io7/wVjYoRhdniJwiMdGdC+P/VeYBbs4HT6BxNDVkQ32CtsvgLse7gv7uejqyAJ7hGzNMAyH4r0Cjvro6kkG+0Qcz8ANFHZs3Sfs0IawwOEUunqSwB4h+wRkF+9kcOXeL2rPg+ILYftYdH1EgSPCVrx7hBxeEbJgD7/DszMMxlzo+gmC3UIO3cgG4bIAbImQQzu6frxgL5+j8iZhh1/oBuGyAKT2sKC1HLo5OMFeYYft6IaAMHoko2BB+43o5mAF+wQcvDE0E4kJllPw8gaLZjAWdHDfI2jniSEOwwJ2N1YxhDKjmwsHKOUNFowrDpDxXiH7QnRzwWA/l73EFi6Hz+gaUDU7HNor7HAYXRwZ4yyn9gnbL0RXTC7eK+wwG8VwfOUNObhB2OEfVcqpkQEAbIOSeVWHbFsAAAAASUVORK5CYII=</ImageData>
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFcSURBVEhLY2AYBdQE+0XsffYL2bugi1MFnGEwZt0nZHsHhEFsdHmKwT5hh7J9Io7/wVjYoRhdniJwiMdGdC+P/VeYBbs4HT6BxNDVkQ32CtsvgLse7gv7uejqyAJ7hGzNMAyH4r0Cjvro6kkG+0Qcz8ANFHZs3Sfs0IawwOEUunqSwB4h+wRkF+9kcOXeL2rPg+ILYftYdH1EgSPCVrx7hBxeEbJgD7/DszMMxlzo+gmC3UIO3cgG4bIAbImQQzu6frxgL5+j8iZhh1/oBuGyAKT2sKC1HLo5OMFeYYft6IaAMHoko2BB+43o5mAF+wQcvDE0E4kJllPw8gaLZjAWdHDfI2jniSEOwwJ2N1YxhDKjmwsHKOUNFowrDpDxXiH7QnRzwWA/l73EFi6Hz+gaUDU7HNor7HAYXRwZ4yyn9gnbL0RXTC7eK+wwG8VwfOUNObhe2OEfVcqpkQEAa1SSeAe3z1sAAAAASUVORK5CYII=</ImageData>
       </Image>
     </StatusPrimitive>
     <Outline Enabled="false" />
@@ -150,7 +150,7 @@
     <StatusPrimitive>
       <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
         <TransColor R="255" G="0" B="255" A="255" />
-        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVEhL5ZQ9SwNBEIYfCxEFCwtbwU6s7Oz8B2KfQlv9AYJdBC0sRWwsREST3FwsgoWFjdgFP8jtERBSWIhiIVgIguBHZKN33k3IJSZpxAfeZnbmnZ3bvYV/RbVKT+WIPh3vGp6wYIRFHe8KfoahM+HxMstTRRjW6x1jhA3fpWplcmzr9Y4oC+MmzVvQYDPNR9llQue1jS+cBubhFEJR57WFyTOjzSNNUjr/V1xs0WuyXIemDqtGWLafqNYgw+3dIQO6rmV8l6Xojm+Efhs/Ed7DuLCi61rCXkWT4blZg+IeL2WXEV3fFCPsRs0bNajJIa/rE/HyTGrzxAb2PBymtE9DPOFcG3zvNHbIMeXw7VulveowwlxdcasS5rVfDHvlSvvc1xUGSprg6794uCowqH1DfIc1XRRV0hkEKjmsa98anjBqdnjVBTE1mcCq1vyAMe1v35uCTm5XnsNxzNxeMZ3UqTyH6Z8GQsqO3k15LrOxKf4sn059GdchHjC3AAAAAElFTkSuQmCC</ImageData>
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVEhL5ZQ9SwNBEIYfCxEFCwtbwU6s7Oz8B2KfQlv9AYJdBC2sROwsREST3FwsgoWFjdgFP8jtERBSWIhiIVgIguBHZKN33k3IJSZpxAfeZnbmnZ3bvYV/RbVKT+WIPh3vGp6wYIRFHe8KfoahM+HxMstTRRjW6x1jhE3fpWplcmzr9Y4oC+MmzVvQYD3NR9llQue1jS+cBubhFEJR57WFyTOjzSNNUjr/V1xs0WuyXIemDqtGWLafqNYgw+3dIQO6rmV8l6Xojm+Efhs/Ed7DuLCi61rCXkWT4blZg+IeL2WXEV3fFCPsRs0bNajJIa/rE/HyTGrzxAb2PBymtE9DPOFcG3zvNHbIMeXw7VulveowwlxdcasS5rVfDHvlSvvc1xUGSprg6794uCowqH1DfIc1XRRV0hkEKjlsaN8anjBqdnjVBTE1mcCq1vyAMe1v35uCTm5XnsNxzNxeMZ3UqTyH6Z8GQsqO3k15LrOxKf4sn9MOGbl0/wpRAAAAAElFTkSuQmCC</ImageData>
       </Image>
     </StatusPrimitive>
     <Outline Enabled="false" />
@@ -687,30 +687,16 @@
   </ES>
   <ES Id="60" Name="Background">
     <GraphicPrimitive>
-      <TextStyle>
-        <Color FillType="Solid">
-          <SolidFill>
-            <FillColor R="235" G="235" B="235" A="255" />
-            <Transparency>0</Transparency>
-          </SolidFill>
-        </Color>
-      </TextStyle>
+      <TextStyle />
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
-            <FillColor R="235" G="235" B="235" A="255" />
+            <FillColor R="240" G="242" B="245" A="255" />
             <Transparency>0</Transparency>
           </SolidFill>
         </Color>
       </FillStyle>
-      <LineStyle Weight="1">
-        <Color FillType="Solid">
-          <SolidFill>
-            <FillColor R="235" G="235" B="235" A="255" />
-            <Transparency>0</Transparency>
-          </SolidFill>
-        </Color>
-      </LineStyle>
+      <LineStyle />
     </GraphicPrimitive>
     <StatusPrimitive />
     <Outline Enabled="false" />
@@ -2072,7 +2058,7 @@
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
-            <FillColor R="240" G="242" B="245" A="255" />
+            <FillColor R="176" G="184" B="196" A="255" />
             <Transparency>0</Transparency>
           </SolidFill>
         </Color>
