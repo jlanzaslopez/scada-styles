@@ -1,0 +1,2987 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ElementStyles ThemeName="Standard_Style" Version="4">
+  <QualityAndStatus Enabled="true">
+  <Status Name="Initializing">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGBSURBVEhLzVXbUcMwENwSKIESKIEOcAehA+iAdGNJ+QgdQAfEhhk+7Q6SDsLsjc6PQ7aU/MDOaEa+O93eSzLwH/AVcNfs8NAGvHBxT5m1uxiNx7bx6NqAc2pR13g82XNZSMTG8SHgvfV45ZK9ISrOqAl4bGoc5aBDz++PPW6sHWVi69CLbY0jv63dDBJ5dM5IU44taCOZRZLVTDQaHrA64nOH++8at1ZODCQendUJ2FAty1Lk0cHWygkpmZYr4Nnqh+jX6rhGQPBsMgvWTSdiKXoiRyD9iH5mpWwdKgo5frMTBjkCYhhhh2oQav2nzWUEenMnK0swafZolyLgxGi603UVQWmJSpAsUWmTc1hsMlEypjkMY+rQW9140Ty6a7KQi6ZvWOqiEZrFwWNvdTkMzU1Fr5DHLuCkJCWZ0Ia2MfLT6mNHyBMcSeIPZZMikpJ4bPS/wTPF/ZNM9GUd5/+NkXJxP9M59NnIU2CzLJF1vNjQSyDPhkMV/9Fb7n/N+V/hBx6av7ZyEk6YAAAAAElFTkSuQmCC</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Out Of Service">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFMSURBVEhLzVXbbcMwDLwROkpH6AjdINkk2ST+s6R8pBu0GzRW+x9v0uIESaFY2bKLGugBBGTzJJJHPYD/gE+Hx8Fi5x0ONI75T/NW4f2Ch7jYzTt81Sz6DuTq+bOIGRcLXx3efI+OFsYq0OKKBod9nmgw8ltzEugjJ/NnuAHMImfWo1tSepCSlcV5k5WQmGXp0Wl/C97iJclVTWywOCZZqoQGQoJRLq6l/cjOlo4zSP1jFYVDal84ViJu7Z+9SJG5/YoZv0DewgbP+WfSXzb344ynlE3LyE3zRLPvfdg+wNYSbd5k4k+3qcGoffeDNnUSG5A3QfWgyZPoDU7a30Ju7txNUFx2BqdJogA5V4vLpPYaxXVtcePrVQsUJdnJd2Nx/8KDI+75GOyVVdHCWPoMxmbmGjHDow6kFyanVuEqhIr4ejEgzWG/OuOt8A2P8cvrV/UI7QAAAABJRU5ErkJggg==</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Uncertain">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVEhLzVXtTQJBEH0lWIIl2IF2IB1AB9oBlGAXd7v8gA6wA9jTxJ/QAXSgeevNMDfsIpiY+JJN7mbezseb3TvgP+A94i7N8dhFTLn4TJvnXY0UMEsB2y7is7R639Tv+xG5Yhd4E/HaBSy58rNLdHFHKWKiG1vs+L5e4MbzaKOPHOVHTDxvAFahlQUsfeC3OR66gHtrIyd31u+rdpIrElkCltaXIp5Tg71W2mCfAp4sR5IwhrUrOFCRxVbetRgNJDOS0Ce8XGDvYywNLFCn0zFFHPymdYsX6cRx8/xOurDa2+o/GtyKfbCBnfV2csSW51GahcjA46fGM7CB/EHQI2zkU/39cEvIWjdY1/hm2Mc5XJrAB/fVE8UEl0qk5/1MIUWJakP2EE7tMlWHTNSOqQVvMpe3C/SYtth53/GiBWxrXbD9FLDydsJ+CYoXjZAuNgEL7yOkfW8ndLil6gV2FkziOylJRA65vbyHE+09Bp/rgG0KGPtERC/JWGWJOJyb3wD5h2M/at/JVqyUi88DX4vdj5WXkH+ZLpEPXB3oNcizaTHq/9EzPv+q4r/AF7CwBZRT69VaAAAAAElFTkSuQmCC</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Device Failure">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFcSURBVEhLY2AYBdQE+0XsffYL2bugi1MFnGEwZt0nZHsHhEFsdHmKwT5hh7J9Io7/wVjYoRhdniJwiMdGdC+P/VeYBbs4HT6BxNDVkQ32CtsvgLse7gv7uejqyAJ7hGzNMAyH4r0Cjvro6kkG+0Qcz8ANFHZs3Sfs0IawwOEUunqSwB4h+wRkF+9kcOXeL2rPg+ILYftYdH1EgSPCVrx7hBxeEbJgD7/DszMMxlzo+gmC3UIO3cgG4bIAbImQQzu6frxgL5+j8iZhh1/oBuGyAKT2sKC1HLo5OMFeYYft6IaAMHoko2BB+43o5mAF+wQcvDE0E4kJllPw8gaLZjAWdHDfI2jniSEOwwJ2N1YxhDKjmwsHKOUNFowrDpDxXiH7QnRzwWA/l73EFi6Hz+gaUDU7HNor7HAYXRwZ4yyn9gnbL0RXTC7eK+wwG8VwfOUNObhe2OEfVcqpkQEAa1SSeAe3z1sAAAAASUVORK5CYII=</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Live Value Playback">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACjSURBVEhLY2AYBaOAZkBkTuEG/vn5Auji6EB8buF/EEYXJwhAmoRnF9wXnp3vgC6HDCiyAIbF5hTUo8vDAFUsgFpyXnR+vgEudejiBAG6BWBLphe8F5tTkI9NHbIYUQDdcGQsMqtgPSwB0MYCpBRGVQvE5uR9EJubX4BNHbIYUQDD8Fn5F2gWyaJz8xvQ5WGAIgtEZuQ/oFlGo3lRMQpGAdEAAKLsrK5gsqLbAAAAAElFTkSuQmCC</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Software Error">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVEhL3ZXhTcMwEIWzQSqbARihCzRnJoAN6AbtCGxAN6BrIOJ4BLIBbEL1Ul50OWEnEb/gkyK1vvN7vrPjVNW/J3l5iD68tC68dzd3X3jwG2OdD/c2fzEQfvPhg6K5BznItfOLRC+nUcQ1fetkn2q5ZTzVsm2dHF/97pN50YfnqUoGLR69PNm4BUYq/2TjE1CqLh+9TrVsbJ4leQmcU2wXS8bK0Zo1JqwEe2JjA+PqXdMP/2vZrDXhAn+sIno5X8Vkz7G1JqwCWjZWUUifFrDGBKeLeTZWcZPsOFhjktXJBr5ZapLVUS3a2hiZM2GLeFAmqE0+2pimZFLcZB7T7DlW5EyKxxQwYa4KYE14xUDD5o7oq6K0F0SbjPNyqyfTmzQcbNwyXCtLLzuiTYZvggsHXRFexs6FR/0RWixOUKq+73MPcmbbUuL6yZTzpNeu6TH2K+E/wwUZomcvg7MYdgAAAABJRU5ErkJggg==</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Security Error">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFESURBVEhL7VXRTcMwEO0GoXEGYAT+I3LuBt2AjsAGZQQ2gA3gDyGSeIVuABs0GxS9mDPOq2wCfAASTzopzt17d3F858XiN8EZsTB+/220pWyejH3uq9UBNj6X9oLjPgVXyElf2e2DsXsV7stmF56r1cH77BaxzE/CFXLaGXsTC7XL5l63Jn4fGzjgst4EbSmX74R66IzcMomF2aARx0/QGbny4nKd+mwWZIMGcwI0Qe6ksCDbf4I/kiBnzFHoEc8mcEbWLMjGHAV6Bn5osC/Aj4dj0XkJ6mFMkOifAK0kZRwPYBjCBy77joAfzKK5BKhYB2LucEyA4cbCqQQaO6t6Bap6NOcvLM4JwnaWze7DvWe4Qs70x3GC0VdZ5yuvB6yZPwsY1XzJdEt7F9a+8vwdMAdonvhr3u6KdEN9FWiibCP9BF4Bir2zVVoi5w8AAAAASUVORK5CYII=</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Operational Error">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD1SURBVEhL7ZXRCcIwEIa7QaXJAI7Qd5FLJ9ER3EA30S1EbBI30Q10A+UvFOI1SWms+qAfHIVw/T9y0TTLvoHNaWKkIiPV2hRqYXMqec9LaEE7I6u7W1oqO6rIJ9kLdbWCFO9Nxic5CnXGCHlvFLyghdrydeCT1AWteF+UuqBlM2ePBHPvCqoT74uiBW3al10JwjF3LsDac0IP2LIbAEkoHHUQ8wvPiGJzmvKQWOFceEYvmCsPClXzcx36n8AutJjdeFioUiXlJyQTHDpGhsPEEzMPiZMkPmK7+0s6/IZk8I0bwidJukpiuJLRw1tw1eC7wtffzgPt1HUIdIKszgAAAABJRU5ErkJggg==</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Configuration Error">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE/SURBVEhLzVXtTcMwFOwGbfMyQBeB9zIBjMAGZYRuUDYgG8BfRJx0A0aATYquio19OEBNkDjppNi5d37+el4s/gOc6M7VNiQU3bGuGF3VHPq6OcZEH+uKweaerPsWw1I3fWXbYamr0CdqbOyJf1HsaozdBENGvBRO7N6t7YFNmdBAG9q1Dex7wleZnst4ZgFPcvHGwlI+i70m5l2lNyxiOtG7QfQaxDf/Z8IzDIANyh1Fz9yUMRDrPsybQ3xQAnKZoY91Hk60PUd/AgcgU9Z45GbBmk/ggFkHmFiilnUe+SWyPevGTbYXFnvmZpHL3hNeySb/7Jjavhe7AuObO8XkmAJzXjR4JebAn5cKIC122nbry0cOZkITbzba7BuAUttVeltarsfY6XI9BTb2ZF0xcnVq1icTDzwMY8766P8G7x53RxbeiL1ZAAAAAElFTkSuQmCC</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Communication Error">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVEhLzVTtTcMwEO0GbXMZoCP0f0XO3SAjsAFsQDeADegG8A8h6qQb0A1gA7oB6By/xHbP/UBC4klVW9/de3fvnIxG/wXtmOdNaVg+8juNn8Sm4Ou0sCU2dmqemnL5nX5eyHxZMo+SE9aokCQUQaQd88zSYh+SvtLVZ1NUu1TMlqZtxzxJeSNY4rUiMpdzrUvEIPJG5iN14ACayCm43fipfF1+kk2x3IYeB5NMQmuk26Y0dyAL42JXyusgS3YJtNhrk3SWxDvJ7Uy4Uv5R3wHxSv5rIgIhaolrt/AhPvM1q07AvIfcrghdYexwgamIrxlsIV4rPE60SyauXaCodjhDIvaSEZmnjUE0unn9aNPq2RX650I89XHVri7W+Q5CNASrfVIn0I/qBSQZOeg0FQEhBNBMJACLQHjJTnC78B+Cm4JvQ4H+VYEzeBkmSiNioybivydy7huLH1RcO9zhfvFu+eYmzM3tBM+ScIX5DtodtsQPchb5OcQORGCXlh89iULcnxPXufdLTiSXH9liydyncQ2ayFHIUgeRYZJjuFhEJgmv3jm4XCTn4xE4kaLa/ab2bPwpuYYff6nQ2vAZmQYAAAAASUVORK5CYII=</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Warning">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVEhL5ZQ9SwNBEIYfCxEFCwtbwU6s7Oz8B2KfQlv9AYJdBC1Sip2FiGiSm4tFsLCwEbvgB7k9AkIKC1EsBAtBEPyI7OmddxPyYZJGfOBtZmfe2bndW/hX1Gr0VY8Y0PGe4QlLRljW8Z7gZxk5Ex4vczxVhVG93jVG2PRdalYmz7Ze74qKMGnSvIUNMmk+Ki5TOq9jfOE0NI+mEEo6ryNMgTltHmuS0vm/4mKLfpPjOjJ1WDfCqv1EQYMst3eHDOm6tvFdVuI7vhEGbfxEeI/iwpquawt7FU2W51YNSnu8VFzGdH1LjLAbN2/UIJBDQdc3xSswrc2bNrDn4TCjfRriCefa4HuniUNOKI9v3yrtVYcRFuqK25WwqP0S2CtX3ue+rjBUswm+/ouHqyLD2jfCd8joorianUGossOG9g3whHGzw6suSKjFBFZB8wMmtL99b4o6uVN5DscJc3vFdFK38hxmfxoIKTt6L+W5zCem+LN8AleuGZs+raDZAAAAAElFTkSuQmCC</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Pending">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVEhL1ZXRDcIwDERvFEZgA9gMNoG/NGEJRmgKEp90g7IByFVdFZMATi0hTjq1cp17UqrEwC90cVg0ARuNaY3Myep0wLoJuGtMa2ROVgyIFdrosX3rCm0xoA44ym9S1GMC6GseKzbXzQAx4Mb7Te9cnwWIDt05YEk1elIw+anm0KkBpMZhn4KkwqlXrv9KKQjJJJwlIabhrCnEPJw0Aoaf3AMq7GRfkabh4xZZQWQ4100guXDWLMh40DLhrClEddBSV0VOs66K/wdEj6scjdJDTxlAYxWABvjLaPxg1dC31AOcbMFWrVoXuwAAAABJRU5ErkJggg==</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+  <Status Name="Bad">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive>
+      <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
+        <TransColor R="255" G="0" B="255" A="255" />
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGSSURBVEhLzVXtUcMwDO0G4ewMwAj9z1Grk8AGdAPYiuNIYjZoN4ANYAN6z44SRVXiwB94d7prrKcPS7K62fwHxCpcdzWFrqbHXgLONO/HaFw4NI6OXb3/tiTpHN1puyJiFbavnt6nzvZvUqQOXNhoPyYaF+6fPX3CsPU3X/iOVbjSPJxBBw64sMG35k2ALNg5srQca+RA+UawXbzJi7/9YOdaVwIHQbm0LgHX47KsyVwDNlwus1Sd250sJb4xLTJoLgsdDe6Bp0ue93OeJ0JnPwbOQdh54rvdSXKhE37GdxJ9oLnaJyMRRDrXyQDcC/gcDlsfnuYCADLIknOAA8DncLgmgHzRuicSHAD9GA5LJZJl0T3RfLNEa5rMZdE9kdzZJgNLY6przkEMbhpTPV2sTA+tf+4XVy8BNuOaMR4awKuirSlqXQlce/jQugFYVPzcEWTNTcABN9nkNTO/7AC9gvGHYgXKfaAHudonk7MEZMHlYkGWUqQO3GLmFniCpLOJGJP0K2CmcX28eAh+X8z5X+EMjhKbeeaTOR0AAAAASUVORK5CYII=</ImageData>
+      </Image>
+    </StatusPrimitive>
+    <Outline Enabled="false" />
+  </Status>
+</QualityAndStatus>
+  <FormatStyles Version="1" BadQualityCharacter="!" TooLargeCharacter="*">
+  <FS Name="Real" ID="10" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="FixedDecimal" ID="20" FormatType="FixedDecimal" Precision="2" />
+  <FS Name="Integer" ID="30" FormatType="Integer" />
+  <FS Name="Exponential" ID="40" FormatType="Exponential" Precision="2" />
+  <FS Name="Hex" ID="50" FormatType="Hex" BitsRange="0 31" />
+  <FS Name="Binary" ID="60" FormatType="Binary" BitsRange="0 31" />
+  <FS Name="UserDefined1" ID="110" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined2" ID="120" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined3" ID="130" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined4" ID="140" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined5" ID="150" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined6" ID="160" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined7" ID="170" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined8" ID="180" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined9" ID="190" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined10" ID="200" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined11" ID="210" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined12" ID="220" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined13" ID="230" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined14" ID="240" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined15" ID="250" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined16" ID="260" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined17" ID="270" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined18" ID="280" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined19" ID="290" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined20" ID="300" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined21" ID="310" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined22" ID="320" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined23" ID="330" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined24" ID="340" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+  <FS Name="UserDefined25" ID="350" FormatType="Real">
+    <ValueRange>
+      <LessThanOne>4</LessThanOne>
+      <InTheOnes>2</InTheOnes>
+      <InTheTens>2</InTheTens>
+      <InTheHundreds>2</InTheHundreds>
+      <InTheThousands>2</InTheThousands>
+      <InTheTenThousands>0</InTheTenThousands>
+      <InTheHundredThousands>0</InTheHundredThousands>
+      <InTheMillions>0</InTheMillions>
+      <InTheTenMillions>0</InTheTenMillions>
+      <OverTheHundredMillions>0</OverTheHundredMillions>
+    </ValueRange>
+  </FS>
+</FormatStyles>
+  <ES Id="10" Name="Title">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="18" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="20" Name="Heading">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="30" Name="Label">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="168" G="174" B="184" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="35" Name="Descriptor">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="8" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="168" G="174" B="184" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="40" Name="Tagname">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="168" G="174" B="184" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="50" Name="Engineering_Units">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="8" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="168" G="174" B="184" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="60" Name="Background">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="30" G="34" B="40" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="70" Name="Passive">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="77" Name="Not_Running">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="217" G="216" B="216" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="80" Name="Active">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="93" G="158" B="110" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="83" Name="Active_NotAvailable">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="85" Name="Non_Automated">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="90" Name="Transitioning">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="217" G="216" B="216" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="93" G="158" B="110" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="100" Name="Interlocked">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="158" G="158" B="158" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="110" Name="Actual_Value">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="120" Name="Actual_Value_Moving_Element">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="130" Name="Setpoint">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="140" Name="Recent_Value_Range">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="150" Name="Optimal_Range">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="160" Name="Over_Range">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="165" Name="Over_Range_NotAvailable">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="170" Name="Control_line">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="180" Name="Process_Line_Primary">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="130" G="101" B="1" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="190" Name="Process_Line_Secondary">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="93" G="173" B="226" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="200" Name="Control_Mode_Automatic">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text" Size="10" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="210" Name="Control_Mode_Manual">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="215" Name="Control_Mode_Cascade">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text" Size="10" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="220" Name="Fencing_1">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="38" G="43" B="51" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="230" Name="Fencing_2">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="46" G="52" B="61" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="176" G="184" B="196" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="250" Name="Minor_Deviation_Limit">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="260" Name="Major_Deviation_Limit">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="126" G="126" B="126" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="126" G="126" B="126" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="263" Name="SafetySystem">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="265" Name="Meter_Level">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="270" Name="Tracker">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="18" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="0" />
+            <Transparency>100</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="275" Name="Full_Range">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="277" Name="Direction_Arrows">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="126" G="126" B="126" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="278" Name="Navigation">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="38" G="43" B="51" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="280" Name="Alarm_Critical_UNACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="250" G="218" B="221" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="290" Name="Alarm_High_UNACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="253" G="219" B="176" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="300" Name="Alarm_Medium_UNACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="253" G="244" B="192" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="310" Name="Alarm_Low_UNACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="214" G="234" B="248" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="320" Name="Alarm_Critical_ACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="330" Name="Alarm_High_ ACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="340" Name="Alarm_Medium_ ACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="350" Name="Alarm_Low_ACK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="14" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="360" Name="Alarm_Critical_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="250" G="218" B="221" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="370" Name="Alarm_High_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="219" B="176" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="380" Name="Alarm_Med_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="244" B="192" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="390" Name="Alarm_Low_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="214" G="234" B="248" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="400" Name="Alarm_Inhibited">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="410" Name="Alarm_Supressed">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="420" Name="Alarm_Shelved">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="480" Name="Good">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="8" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="132" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="484" Name="Satisfactory">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="8" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="198" G="198" B="198" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="198" G="198" B="198" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="488" Name="Bad">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="8" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="0" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="501" Name="Intensity1">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="502" Name="Intensity2">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="235" G="235" B="235" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="235" G="235" B="235" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="503" Name="Intensity3">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="198" G="198" B="198" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="198" G="198" B="198" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="504" Name="Intensity4">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="235" G="235" B="235" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="505" Name="Intensity5">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="235" G="235" B="235" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="49" G="49" B="49" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="49" G="49" B="49" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="506" Name="Intensity6">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="52" G="52" B="52" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="52" G="52" B="52" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="510" Name="Trend_Grid">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="132" G="132" B="132" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle />
+      <LineStyle Pattern="ShortDash" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="154" G="154" B="154" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="520" Name="Trend_Pen">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="530" Name="Trend_PenA">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="0" G="0" B="0" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="540" Name="Trend_PenB">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="187" G="62" B="150" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="550" Name="Trend_PenC">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="115" G="208" B="168" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="560" Name="Trend_PenD">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="140" G="146" B="208" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="570" Name="Default_Background">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="30" G="34" B="40" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="580" Name="Default_Foreground">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="58" G="64" B="73" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="590" Name="Default_Accent">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="158" G="158" B="158" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="158" G="158" B="158" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="600" Name="Default_Selected">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="46" G="134" B="193" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="46" G="134" B="193" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="610" Name="Default_Hover">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="620" Name="Default_FontFamily">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="630" Name="Default_FontStyle">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semiligh" Size="10" Bold="false" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+      </TextStyle>
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="640" Name="Default_FocusIndicator">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Segoe UI Variable Text Semibold" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="234" B="237" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="38" G="43" B="51" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="800" Name="0_Bot_OFF">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="176" G="184" B="196" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="38" G="43" B="51" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="176" G="184" B="196" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="810" Name="1_Bot_ON">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="46" G="134" B="193" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="46" G="134" B="193" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="820" Name="2_Bot_HOV">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="830" Name="3_Bot_DIS">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="176" G="184" B="196" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="217" G="216" B="216" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="176" G="184" B="196" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="840" Name="4_Bot_FS">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="255" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="850" Name="5_Bot_FS_HOV">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="250" G="218" B="221" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="860" Name="6_Bot_HOV_ALT">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="214" G="234" B="248" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="870" Name="Transparente">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="NoFill" />
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="880" Name="7_Bot_OK">
+    <GraphicPrimitive>
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="93" G="158" B="110" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="200" G="230" B="201" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="93" G="158" B="110" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="890" Name="Fencing_3">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="NoFill" />
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="176" G="184" B="196" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="900" Name="User_Defined_11">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="910" Name="User_Defined_12">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="920" Name="User_Defined_13">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="930" Name="User_Defined_14">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="940" Name="User_Defined_15">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="950" Name="User_Defined_16">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="960" Name="User_Defined_17">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="970" Name="User_Defined_18">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="980" Name="User_Defined_19">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="990" Name="User_Defined_20">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1000" Name="User_Defined_21">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1010" Name="User_Defined_22">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1020" Name="User_Defined_23">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1030" Name="User_Defined_24">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle />
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1040" Name="Meter_Level_Unfilled">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="235" G="235" B="235" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="235" G="235" B="235" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1050" Name="AlarmBorder_Critical_UNACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="250" G="218" B="221" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="250" G="218" B="221" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1060" Name="AlarmBorder_High_UNACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="219" B="176" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="253" G="219" B="176" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1070" Name="AlarmBorder_Medium_UNACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="244" B="192" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="253" G="244" B="192" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1080" Name="AlarmBorder_Low_UNACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="214" G="234" B="248" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+        <Blink Speed="Slow">
+          <Color FillType="Solid">
+            <SolidFill>
+              <FillColor R="214" G="234" B="248" A="255" />
+              <Transparency>0</Transparency>
+            </SolidFill>
+          </Color>
+        </Blink>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1090" Name="AlarmBorder_Critical_ACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="250" G="218" B="221" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1100" Name="AlarmBorder_High_ ACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="219" B="176" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1110" Name="AlarmBorder_Medium_ ACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="244" B="192" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1120" Name="AlarmBorder_Low_ACK">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="214" G="234" B="248" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="3">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1130" Name="AlarmBorder_Critical_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="250" G="218" B="221" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1140" Name="AlarmBorder_High_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="219" B="176" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1150" Name="AlarmBorder_Med_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="253" G="244" B="192" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1160" Name="AlarmBorder_Low_RTN">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="214" G="234" B="248" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle Pattern="Solid" Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1170" Name="AlarmBorder_Inhibited">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1180" Name="AlarmBorder_Supressed">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1190" Name="AlarmBorder_Shelved">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+  <ES Id="1200" Name="AlarmBorder_Silenced">
+    <GraphicPrimitive>
+      <TextStyle />
+      <FillStyle>
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="255" G="0" B="255" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </FillStyle>
+      <LineStyle />
+    </GraphicPrimitive>
+    <StatusPrimitive />
+    <Outline Enabled="false" />
+  </ES>
+</ElementStyles>
