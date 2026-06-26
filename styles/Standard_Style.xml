@@ -150,7 +150,7 @@
     <StatusPrimitive>
       <Image ImageStyle="Normal" IsSVG="False" ImageAlignment="Centers">
         <TransColor R="255" G="0" B="255" A="255" />
-        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVEhL5ZQ9SwNBEIYfCxEFCwtbwU6s7Oz8B2KfQlv9AYJdBC2sROwsREST3FwsgoWFjdgFP8jtERBSWIhiIVgIguBHZKN33k3IJSZpxAfeZnbmnZ3bvYV/RbVKT+WIPh3vGp6wYIRFHe8KfoahM+HxMstTRRjW6x1jhE3fpWplcmzr9Y4oC+MmzVvQYD3NR9llQue1jS+cBubhFEJR57WFyTOjzSNNUjr/V1xs0WuyXIemDqtGWLafqNYgw+3dIQO6rmV8l6Xojm+Efhs/Ed7DuLCi61rCXkWT4blZg+IeL2WXEV3fFCPsRs0bNajJIa/rE/HyTGrzxAb2PBymtE9DPOFcG3zvNHbIMeXw7VulveowwlxdcasS5rVfDHvlSvvc1xUGSprg6794uCowqH1DfIc1XRRV0hkEKjlsaN8anjBqdnjVBTE1mcCq1vyAMe1v35uCTm5XnsNxzNxeMZ3UqTyH6Z8GQsqO3k15LrOxKf4sn9MOGbl0/wpRAAAAAElFTkSuQmCC</ImageData>
+        <ImageData>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVEhL5ZQ9SwNBEIYfCxEFCwtbwU6s7Oz8B2KfQlv9AYJdBC1Sip2FiGiSm4tFsLCwEbvgB7k9AkIKC1EsBAtBEPyI7OmddxPyYZJGfOBtZmfe2bndW/hX1Gr0VY8Y0PGe4QlLRljW8Z7gZxk5Ex4vczxVhVG93jVG2PRdalYmz7Ze74qKMGnSvIUNMmk+Ki5TOq9jfOE0NI+mEEo6ryNMgTltHmuS0vm/4mKLfpPjOjJ1WDfCqv1EQYMst3eHDOm6tvFdVuI7vhEGbfxEeI/iwpquawt7FU2W51YNSnu8VFzGdH1LjLAbN2/UIJBDQdc3xSswrc2bNrDn4TCjfRriCefa4HuniUNOKI9v3yrtVYcRFuqK25WwqP0S2CtX3ue+rjBUswm+/ouHqyLD2jfCd8joorianUGossOG9g3whHGzw6suSKjFBFZB8wMmtL99b4o6uVN5DscJc3vFdFK38hxmfxoIKTt6L+W5zCem+LN8AleuGZs+raDZAAAAAElFTkSuQmCC</ImageData>
       </Image>
     </StatusPrimitive>
     <Outline Enabled="false" />
@@ -2406,13 +2406,15 @@
   <ES Id="870" Name="Transparente">
     <GraphicPrimitive>
       <TextStyle />
-      <FillStyle />
+      <FillStyle>
+        <Color FillType="NoFill" />
+      </FillStyle>
       <LineStyle />
     </GraphicPrimitive>
     <StatusPrimitive />
     <Outline Enabled="false" />
   </ES>
-  <ES Id="880" Name="8_Bot_OK">
+  <ES Id="880" Name="7_Bot_OK">
     <GraphicPrimitive>
       <TextStyle>
         <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
@@ -2443,11 +2445,20 @@
     <StatusPrimitive />
     <Outline Enabled="false" />
   </ES>
-  <ES Id="890" Name="User_Defined_10">
+  <ES Id="890" Name="Fencing_3">
     <GraphicPrimitive>
       <TextStyle />
-      <FillStyle />
-      <LineStyle />
+      <FillStyle>
+        <Color FillType="NoFill" />
+      </FillStyle>
+      <LineStyle Weight="1">
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="176" G="184" B="196" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </LineStyle>
     </GraphicPrimitive>
     <StatusPrimitive />
     <Outline Enabled="false" />
