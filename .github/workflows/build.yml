@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -24,8 +24,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -33,19 +31,6 @@ jobs:
 
       - name: Generate data files
         run: python generate_viewer.py --all styles/ docs/
-
-      - name: Commit generated data files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-          git add docs/styles_index.json docs/styles_data_*.json
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "ci: regenerate data files [skip ci]"
-            git push
-          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
