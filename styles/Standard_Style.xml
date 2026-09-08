@@ -2614,7 +2614,15 @@
   </ES>
   <ES Id="1050" Name="AlarmBorder_Critical_UNACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2645,7 +2653,15 @@
   </ES>
   <ES Id="1060" Name="AlarmBorder_High_UNACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2676,7 +2692,15 @@
   </ES>
   <ES Id="1070" Name="AlarmBorder_Medium_UNACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2707,7 +2731,15 @@
   </ES>
   <ES Id="1080" Name="AlarmBorder_Low_UNACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2738,7 +2770,15 @@
   </ES>
   <ES Id="1090" Name="AlarmBorder_Critical_ACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="192" G="57" B="43" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2761,7 +2801,15 @@
   </ES>
   <ES Id="1100" Name="AlarmBorder_High_ ACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="232" G="101" B="10" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2784,7 +2832,15 @@
   </ES>
   <ES Id="1110" Name="AlarmBorder_Medium_ ACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="212" G="172" B="13" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2807,7 +2863,15 @@
   </ES>
   <ES Id="1120" Name="AlarmBorder_Low_ACK">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="26" G="82" B="118" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2830,7 +2894,15 @@
   </ES>
   <ES Id="1130" Name="AlarmBorder_Critical_RTN">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2853,7 +2925,15 @@
   </ES>
   <ES Id="1140" Name="AlarmBorder_High_RTN">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2876,7 +2956,15 @@
   </ES>
   <ES Id="1150" Name="AlarmBorder_Med_RTN">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
@@ -2899,7 +2987,15 @@
   </ES>
   <ES Id="1160" Name="AlarmBorder_Low_RTN">
     <GraphicPrimitive>
-      <TextStyle />
+      <TextStyle>
+        <Font Name="Consolas" Size="12" Bold="true" Italic="false" Strikeout="false" Underline="false" Charset="0" VerticalFont="false" />
+        <Color FillType="Solid">
+          <SolidFill>
+            <FillColor R="216" G="221" B="228" A="255" />
+            <Transparency>0</Transparency>
+          </SolidFill>
+        </Color>
+      </TextStyle>
       <FillStyle>
         <Color FillType="Solid">
           <SolidFill>
