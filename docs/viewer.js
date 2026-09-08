@@ -263,7 +263,7 @@ document.querySelectorAll('[data-force]').forEach(btn => {
 function downloadXML() {
   if (!currentKey) return;
   const a = document.createElement('a');
-  a.href = '../styles/' + currentKey + '.xml';
+  a.href = 'styles/' + currentKey + '.xml';
   a.download = currentKey + '.xml';
   a.click();
 }
