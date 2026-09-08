@@ -36,6 +36,11 @@ jobs:
       - name: Generate data files
         run: python generate_viewer.py --all styles/ docs/
 
+      - name: Copy XML sources into docs for download
+        run: |
+          mkdir -p docs/styles
+          cp styles/*.xml docs/styles/
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
